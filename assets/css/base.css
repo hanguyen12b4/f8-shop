@@ -156,6 +156,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .select-input:hover .select-input__list {
@@ -201,4 +202,112 @@ html {
 .select-input__item button:hover {
     cursor: pointer;
     color: var(--primary-color);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item__link.pagination-item__link--active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item__link:hover.pagination-item__link--active {
+    background-color: #ed5c3f;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    display: block;
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 2px;
+}
+
+.footer {
+    border-top: 4px solid var(--primary-color);
+    padding-top: 12px;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 3px 0;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.footer-link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__icon {
+    font-size: 1.6rem;
+    margin: -2px 8px 0 0;
+}
+
+.footer__download {
+    display: flex;
+}
+
+.footer__download-qr {
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--border-color);
+}
+
+.footer__download-apps {
+    margin-left: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer__download-apps-link {
+    display: block;
+    text-decoration: none;
+    color: transparent;
+}
+
+.footer__download-app-img {
+    height: 24px;
+}
+
+.footer__bottom {
+    background-color: #F5F5F5;
+    padding: 8px 0;
+    margin-top: 24px;
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #737373;
 }
