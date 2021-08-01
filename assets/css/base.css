@@ -6,6 +6,7 @@
     --border-color : #dbdbdb;
     --header-height : 120px;
     --navbar-height : 42px;
+    --header-sort-bar-height: 46px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
     --star-gold-color: #FFCE3E;
 }
@@ -22,11 +23,6 @@ html {
     box-sizing: border-box;
 }
 
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto; 
-}
 
 .grid__full-width {
     width: 100%;
@@ -235,79 +231,4 @@ html {
     text-align: center;
     line-height: var(--height);
     border-radius: 2px;
-}
-
-.footer {
-    border-top: 4px solid var(--primary-color);
-    padding-top: 12px;
-}
-
-.footer__heading {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    color: var(--text-color);
-}
-
-.footer-list {
-    padding-left: 0;
-    list-style: none;
-}
-
-.footer-link {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #737373;
-    padding: 3px 0;
-    display: block;
-    display: flex;
-    align-items: center;
-}
-
-.footer-link:hover {
-    color: var(--primary-color);
-}
-
-.footer-item__icon {
-    font-size: 1.6rem;
-    margin: -2px 8px 0 0;
-}
-
-.footer__download {
-    display: flex;
-}
-
-.footer__download-qr {
-    width: 80px;
-    height: 80px;
-    border: 1px solid var(--border-color);
-}
-
-.footer__download-apps {
-    margin-left: 16px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.footer__download-apps-link {
-    display: block;
-    text-decoration: none;
-    color: transparent;
-}
-
-.footer__download-app-img {
-    height: 24px;
-}
-
-.footer__bottom {
-    background-color: #F5F5F5;
-    padding: 8px 0;
-    margin-top: 24px;
-}
-
-.footer__text {
-    margin: 0;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #737373;
 }
